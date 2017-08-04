@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Head</title>
+		<meta charset="utf-8">
+		<meta name="author" content="weiwang@">
+		<meta name="description" content="The page mainly displays what is the head of HTML. What are it contains.">
+		<link rel="shortcut icon" href="../ffx.ico" type="image/x-icon">
+	</head>
+	<body>
+		<p>Head's content is not displayed on the page.Head's job is to contain metadata about the document.</p>
+
+		<h3>What is metadata?</h3>
+		<p>Metadata is data that describes data. e.g: who write the document, and its summary</p>
+		<ul>
+			<li><strong>Adding title</strong></li>
+			<p>&lt;title&gt; element can be used to add a title to the webpage. It is not the doucument's content. It is different with &lt;h1&gt;. title content will display as bookmark name</p>
+			<li><strong>The &lt;meta&gt; element</strong></li>
+			<p>The offical way of adding metadata to a document is the &lt;meta&gt; element. There are a lot of different types that can be included in page's &lt;head&gt;.
+			<ol>
+				<li>Document's character encoding</li>
+				<p> &lt;meta charset=&quot;utf-8&quot;&gt;  specifies the document's character encoding is utf-8. </p>
+				<li>Adding an author and description</li>
+				<p>Using name and content attributes in &lt;meta&gt;</p>
+				<p>name: the type of meta element it is, what type of information it contains
+				   ;
+				   content: the actual meta content.
+				</p>
+				<li>Other types of metadata</li>
+				<p>Using property attribute for metadata to display for facebook and twitter</p>
+				<p>&lt;meta property=&quot;og:description&quot; content=&quot;some text&quot;&gt;
+				   ;
+				   &lt;meta property=&quot;twitter:title&quot; content=&quot;title text&quot;&gt;
+				</p>
+			</ol>
+			<li><strong>Adding custom icons to your site</strong></li>
+			<p> A 16 X 16 pixel icon is used in multiple places. It will display in the browser tab containing each open page, and next to bookmarked pages in the bookmarks panel. Saving it.ico in the same directory as site's index page.</p>
+			<p>&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;</p>
+			<li><strong>Applying CSS and JavaScript to HTML</strong></li>
+			<p>CSS use &lt;link&gt; element; rel=&quot;stylesheet&quot;---indicates that it is the document's stylesheet. e.g &lt;link rel=&quot;stylesheet&quot; href=&quot;xxx.css&quot;&gt;</p> 
+			<p>JavaScript use &lt;script&gt; element does not have to go in the head, it is better to put it at the bottom of the document body part. &lt;script src=&quot;xxx.js&quot;&gt;&lt;/script&gt;</p>
+			<li><strong>Setting the primary language</strong></li>
+			<p>Adding the lang attribute to html tag. e.g: &lt;html lang=&quot;en-US&quot;; it also can be used in subsections of the docuement for different languages</p>
+	</body>
+</html>
