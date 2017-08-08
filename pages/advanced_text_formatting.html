@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Advanced Text Formatting</title>
+		<meta name="author" content="weiwang@">
+		<meta name="description" content="There are many other elements in HTML for formatting text, e.g: making up quotations, description lists,computer codeand other related text,subscript and superscript, contact information, and more">
+		<link rel="shortcut icon" href="../ffx.ico">
+	</head>
+	<body>
+		<ul>
+			<li>Description lists</li>
+			<p>description lists is wrapped in a &lt;dl&gt; element; each term is wrapped in a &lt;dt&gt; element; each description is wrapped in a &lt;dd&gt; element</p>
+			<dl>
+				<dt>Python</dt>
+				<dd>Python is an easy to learn, powerful programming language.</dd>
+				<dd>It has efficient high-level data structures and a simple but effective approach to object-oriented programming. </dd>
+				<dt>JavaScript</dt>
+				<dd>JavaScript is a great language for coding beginners.</dd>
+			</dl>
+			<li>Quotations</li>
+			<ol>
+				<li>Blockquotes</li>
+				<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+					<p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML block Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+				</blockquote>
+				<li>Inline quotations</li>
+				<p>The quote element - <code>&lt;q&gt;</code> - is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intented for short quotations that don't require paragraph breaks.</q></p>
+				<li>Citations</li>
+				<p>Hello and welcome to my motivation page. As <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>Confucius</cite></a> once said:</p>
+				<blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+					<p>It does not matter how slowly you go as long as you do not stop.</p>
+				</blockquote>
+				<p>I also love the concept of positive thinking, and <q cite="http://www.affirmationsforpositivethinking.com/index.html">The Need To Eliminate Negative Self Talk</q> (as mentioned in <a href="http://www.affirmationsforpositivethinking.com/index.html"><cite>Affirmations for Positive Thinking</cite></a>.)</p>
+			</ol>
+			<li>Abbreviations</li>
+			<p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+			<li>Making up contact details</li>
+			<address>
+				<p>weiwang, Shi Jingshan, The Beijing West, China</p>
+			</address>
+			<li>Superscript and subscript</li>
+			<p>My birthday is on the 24<sup>th</sup> of February 1908.</p>
+			<p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
+			<p>if x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+			<li>Representing computer code</li>
+			<pre><code>var para = document.querySelector('p');
+			
+para.onclick = function(){
+   alert('Owww, stop poking me!")
+}</code></pre>
+			<p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code></p>
+			<p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+			<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+			<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 tt1=40 time=158.233 ms</samp></pre>
+			<li>Marking up times and dates</li>
+			<time datetime="2017-08-08">08 Augest 2017</time>
+		</ul>
+	</body>
+</html>
+
