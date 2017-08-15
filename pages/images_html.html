@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Images in HTML</title>
+		<link rel="Shortcut icon" href="../ffx.ico" type="image">
+	</head>
+	<body>
+
+		<h1>Images in HTML</h1>
+
+		<h2>abstract path for image</h2>
+		<img src="http://images.clipartpanda.com/baby-dinosaur-cartoon-istockphoto-8477281-baby-dinosaur-jpg.jpg">
+
+		<h2>relative path for image</h2>
+		<img src="../images/dinosaur.jpg">
+
+		<h2>Alternative text</h2>
+		<img src="images/dinosaur.jpg" alt="It's a baby dinosaur cartoon picture">
+
+		<h2>Width and height</h2>
+		<img src="../images/dinosaur.jpg" width="180" height="100">
+		<img src="images/dinosaur.jpg" width="180" height="100">
+		
+		<h2>Image title</h2>
+		<img src="../images/dinosaur.jpg" title="Cartoon baby dinosaur">
+
+		<h2>Annotating images --- captions</h2>
+		<div class="figure">
+			<img src="http://images.clipartpanda.com/baby-dinosaur-cartoon-istockphoto-8477281-baby-dinosaur-jpg.jpg"
+			     alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+			     width="400"
+			     height="341">
+			<p>A T-Rex on display in the Manchester University Museum.</p>
+		</div>
+
+		<figure>
+			<img src="http://images.clipartpanda.com/baby-dinosaur-cartoon-istockphoto-8477281-baby-dinosaur-jpg.jpg"
+			     alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+			     width="400"
+			     height="341">
+			<figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+		</figure>
+	</body>
+</html>
