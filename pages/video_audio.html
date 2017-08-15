@@ -1,0 +1,48 @@
+<!DOCTPYE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Video and Audio</title>
+		<link rel="shortcut icon" href="../ffx.ico" type="image/x-icon">
+	</head>
+	<body>
+		<h1>Video and Audio in HTML</h1>
+		<p>The HTML5 specification had such features added, with &lt;video&gt; and &lt;audio&gt; elements</p>
+
+		<h2>The &lt;vedio&gt; element</h2>
+		<video src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls>
+			<p>Your browser doesn't support HTML5 video. </p>
+		</video>
+
+		<h2>Different format for different browser</h2>
+		<video controls>
+			<source src="../images/rabbit320.mp4" type="video/mp4">
+			<source src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" type="video/webm">
+		<p>The HTML5 specification had such features added, with &lt;video&gt; and &lt;audio&gt; elements</p>
+		</video>
+
+		<h2>Other &lt;video&gt; features</h2>
+		<video controls width="400" height="400" loop muted poster="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/poster.png">
+			<source src="../images/rabbit320.mp4" type="video/mp4">
+			<source src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" type="video/webm">
+		<p>The HTML5 specification had such features added, with &lt;video&gt; and &lt;audio&gt; elements</p>
+		</video>
+
+		<h2>The &lt;audio&gt; element</h2>
+		<audio controls>
+			<source src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/viper.mp3" type="audio/mp3">
+			<source src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/video-and-audio-content/viper.ogg" type="audio/ogg">
+			<p>Your browser doesn't support HTML5 audio.</p>
+		</audio>
+		
+		<!--
+		<h2>Displaying video text tracks</h2>
+		<video controls>
+			<source src="example.mp4" type="video/mp4">
+			<source src="example.webm" type="video/webm">
+			<track kind="subtitle" src="subtitle_en.vtt" srclang="en">
+		</video>
+		-->
+	</body>
+</html>
