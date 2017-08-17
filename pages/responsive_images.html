@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Images</title>
+        <meta name="author" content="weiwang@">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="../ffx.ico type="image/x-icon">
+        <link href="../styles/responsive_images.css" type="style/text" rel="stylesheet">
+    </head>
+    
+    <body>
+        <h1>Desponsive Images</h1>
+
+        <h2>Resolution switching: Different sizes</h2>
+        <ul>
+            <li>standard</li>
+            <img src="../images/elva-fairy-800w.jpg" alt="The girl dressed as a fairy">
+
+            <li>srcset and sizes attributes</li>
+            <img srcset="../images/elva-fairy-320w.jpg 320w,
+                        ../images/elva-fairy-480w.jpg 480w,
+                        ../images/elva-fairy-800w.jpg 800w"
+                sizes="(max-width: 320px) 280px,
+                        (max-width: 480px) 440px,
+                        800px"
+                src="../images/elva-fairy-800w.jpg" alt="The girl dressed as a fairy">
+
+            <li>Resolution switching: Same size, different resolutions</li>
+            <img srcset="../images/elva-fairy-320w.jpg,
+                        ../images/elva-fairy-480w.jpg 1.5x,
+                        ../images/elva-fairy-640w.jpg 2x"
+                src="../images/elva-fairy-640w.jpg" alt="The girl dressed as a fairy">
+    </body>
+
+</html>
