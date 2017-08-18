@@ -6,7 +6,7 @@
         <title>Responsive Images</title>
         <meta name="author" content="weiwang@">
         <meta name="description" content="">
-        <link rel="shortcut icon" href="../ffx.ico type="image/x-icon">
+        <link rel="shortcut icon" href="../ffx.ico" type="image/x-icon">
         <link href="../styles/responsive_images.css" type="style/text" rel="stylesheet">
     </head>
     
@@ -32,6 +32,20 @@
                         ../images/elva-fairy-480w.jpg 1.5x,
                         ../images/elva-fairy-640w.jpg 2x"
                 src="../images/elva-fairy-640w.jpg" alt="The girl dressed as a fairy">
+
+	    <li>Art direction</li>
+	    <picture>
+	    	<source media="(max-width: 799px)" srcset="../images/elva-480w-close-portrait.jpg">
+		<source media="(min-width: 800px)" srcset="../images/elva-800w.jpg">
+		<img src="../images/elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+	    </picture>
+
+	    <li>Use modern image formats boldly</li>
+	    <picture>
+	    	<source type="image/svg+xml" srcset="../images/pyramid.svg">
+		<source type="image/webp" srcset="../images/pyramid.webp">
+		<img src="../images/pyramid.png" alt="ragular pyramid">
+	    </picture>
     </body>
 
 </html>
