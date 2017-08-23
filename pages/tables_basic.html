@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Tables Basics</title>
+		<link rel="shortcut icon" href="../ffx.ico" type="image/x-icon">
+		<link href="../styles/minimal-table.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Table Basics</h1>
+
+		<h2>&lt;td&gt; is cell.</h2>
+		<table>
+			<td>Hi, I'm your first cell.</td>
+		</table>
+
+		<h2>a row of four cells.</h2>
+		<table>
+			<td>First cell.</td>
+			<td>Second cell.</td>
+			<td>Third cell</td>
+			<td>Fourth cell</td>
+		</table>
+
+		<h2>&lt;tr&gt; is for changing row</h2>
+		<table>
+			<tr>
+				<td>first row, first cell</td>
+				<td>first row, second cell</td>
+				<td>first row, third cell</td>
+			</tr>
+			<tr>
+				<td>second row, first cell</td>
+				<td>second row, second cell</td>
+				<td>second row, third cell</td>
+			</tr>
+		</table>
+
+		<h2>Adding headers with &lt;th&gt; elements</h2>
+		<table>
+			<tr>
+				<td>&nbsp;</td>
+				<th scope="col">Knocky</th>
+				<th scope="col">Flor</th>
+				<th scope="col">Ella</th>
+				<th scope="col">Juan</th>
+			</tr>
+			<tr>
+				<th scope="row">Breed</th>
+				<td>Jack Russell</td>
+				<td>Poodle</td>
+				<td>Streetdog</td>
+				<td>Cocker Spaniel</td>
+			</tr>
+			<tr>
+				<th scope="row">Age</th>
+				<td>16</td>
+				<td>9</td>
+				<td>10</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th scope="row">Owner</th>
+				<td>Mother-in-law</td>
+				<td>Me</td>
+				<td>Me</td>
+				<td>Sister-in-law</td>
+			</tr>
+			<tr>
+				<th scope="row">Eating Habits</th>
+				<td>Eats everyone's leftovers</td>
+				<td>Nibbles at food</td>
+				<td>Hearty eater</td>
+				<td>Will eat till he explodes</td>
+			</tr>
+		</table>
+
+
+		<h2>Allowing cells to span multiple rows and columns</h2>
+		<table>
+			<tr>
+				<th colspan="2">Animals</th>
+			</tr>
+			<tr>
+				<th colspan="2">Hippopotamus</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Horse</th>
+				<td>Mare</td>
+			</tr>
+			<tr>
+				<td>Stallion</td>
+			</tr>
+			<tr>
+				<th colspan="2">Crocodile</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Chicken</th>
+				<td>Cock</td>
+			</tr>
+			<tr>
+				<td>Rooster</td>
+			</tr>
+		</table>
+
+		<h2>Providing common styling to columns</h2>
+		<a href="school_timesheet.html">School timesheet</a>
+	</body>
+</html>
