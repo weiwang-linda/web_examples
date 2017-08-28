@@ -1,0 +1,13 @@
+a {
+	color: blue;
+	font-weight: bold;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover, a:active, a:focus {
+	color: darkred;
+	text-decoration: none;
+}
