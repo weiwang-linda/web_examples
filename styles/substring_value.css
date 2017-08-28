@@ -1,0 +1,15 @@
+[lang|=fr] {
+	font-weight: bold;
+}
+
+[data-quantity^="optional"] {
+	opacity: 0.5;
+}
+
+[data-quantity$="kg"] {
+	font-weight: bold;
+}
+
+[data-vegetable*="not spicy"] {
+	color: green;
+}

@@ -1,0 +1,11 @@
+[data-vegetable] {
+	color: green;
+}
+
+[data-vegetable~="spicy"] {
+	color: red;
+}
+
+[data-vegetable="liquid"] {
+	background-color: yellow;
+}
