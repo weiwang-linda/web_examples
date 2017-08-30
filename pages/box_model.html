@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Box Model</title>
+		<link rel="shortcut icon" href="../ffx.ico">
+	</head>
+	<body>
+		<p>Beyond setting the width, height, border, padding and margin of boxes, there are some other properties available to change how they behave.</p>
+
+		<h3>Overflow</h3>
+		<p>When setting the size of a box with absolute values, the content may overflow the box. We can use the overflow property to control this happen.It takes several possible values, most common are:</p>
+		<ul>
+			<li>auto: overflowing content is hidden, scroll bars are shown.</li>
+			<li>hidden: overflowing content is hidden</li>
+			<li>visible: overflowing content is shown outside of the box</li>
+		</ul>
+		<a href="overflow.html">Overflow property</a>
+
+		<h3>Background clip</h3>
+		<p>backgrounds(background-color, background-image)extend to the outer edge of the border. This behaviour can be adjusted by setting the background-clip property on the box</p>
+		<a href="bg_clip.html">Background clip</a>
+
+		<h3>Outline</h3>
+		<p>the outline of a box is not the part of box model.It is drawn outside the border box, inside the margin area.</p>
+
+		<h3>Types of CSS boxes</h3>
+		<p>Boxes represent block level elements.The type of box applied to an element is specified by the <u>display</u> property. The most common values of display property are:</p>
+		<ul>
+			<li>block: content before and after the box appears on a separate line</li>
+			<li>inline: it is the opposite of a block box.Width and height settings have no effect on inline boxes. Content will appear on the same line as surrounding text and other inline elements</li>
+			<li>inline-block: between the first two. If content is short it is same to inline box; if content is long it is same to block box</li>
+		</ul>
+		<a href="box_types.html">Types of css boxes</a>
+	</body>
+</html>
