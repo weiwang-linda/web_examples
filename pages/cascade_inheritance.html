@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Cascade and Inheritance</title>
+		<link rel="shortcut icon" href="../ffx.ico">
+		<link rel="stylesheet" href="../styles/cascade_inheritance.css">
+	</head>
+	<body>
+		<h1>The cascade</h1>
+		<p>The cascade indicates that the order of CSS rules matter, but it's more complex than that.There are three factors the cascade depends on.</p>
+		<ol>
+			<li>Importance</li>
+			<li>Specificity</li>
+			<li>Source order</li>
+		</ol>
+
+		<h2>Importance</h2>
+		<p>There is a special piece of syntax which to make sure that a certain rule will always win over all others: !important</p>
+		<div>
+			<p class="better">This is a paragraph</p>
+			<p class="better" id="winning">One selector to rule them all!</p>
+		</div>
+
+		<h2>Specificity</h2>
+		<p>From example we can see the priority of some specificity: element selectors &lt; class selectors &lt; ID selectors &lt; !important</p>
+		<p>The amount of specificity a selector has is measured using four different values, four single digits in four columns(thousands, hundreds, tens and  ones)</p>
+		<ol>
+			<li>Thousands: Score one in this column if the declaration is inside a style attribute, otherwise 0.</li>
+			<li>Hundreds: Score one in this column for each ID selector contained inside the overall selector.</li>
+			<li>Tens: Score one in this column for each class selector, attribute selector, or pseudo-class contained inside the overall selector.</li>
+			<li>Ones: Score one in this colum for each element selector or preudo-element contained inside the overall selector</li>
+			<li> Universal selector(*), combinators(+,&gt;,~,'') and negation pseudo-class(:not) have no effect on specificity</li>
+		</ol>
+
+		<h2>Source order</h2>
+		<p>Source order means later rules will win over earlier rules.</p>
+
+		<h2>Inheritance</h2>
+		<ul>
+			<li>It makes sense for font-family and color to be inherited</li>
+			<li>It makes sense for margin, padding, border, and background-image to NOT be inherited.</li>
+		</ul>
+
+		<h2>Controlling inheritance</h2>
+		<ul>
+			<li><strong>inherit</strong>: This value sets the property value applied to a selected element to be the same as that of its parent element.</li>
+			<li><strong>initial</strong>: This value set the property value applied to a selected element to be the same as the value set for that element in the browser's default style sheet.If no value is set by the browser's default style sheet and the property is naturally inherited, then the property value is set to inherit instead.</li>
+			<li><strong>unset</strong>: This value resets the property to its natural value, which means that if the property is naturally inherited it acts like inherit, otherwise it acts like initial.</li>
+
+	</body>
+</html>

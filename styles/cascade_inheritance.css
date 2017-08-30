@@ -1,0 +1,16 @@
+#winning {
+	background-color: red;
+	border: 2px solid black;
+}
+
+.better {
+	background-color: grey;
+	border: none !important;
+}
+
+div p {
+	background-color: blue;
+	color: white;
+	padding: 5px;
+}
+
