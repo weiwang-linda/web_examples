@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Box model recap</title>
+		<link rel="shortcut icon" href="../ffx.ico" type="image/icon">
+	</head>
+	<body>
+		<h2>Overflow</h2>
+		<p>The content may not fit within the allowed size.we can use the overflow property. It takes serveral possilbe values, but the most common are:</p>
+		<ul>
+			<li>auto</li>
+			<li>hidden</li>
+			<li>visible</li>
+		</ul>
+
+		<h2>Background clip</h2>
+
+		<h2>Outline</h2>
+
+		<h2>Width and height constraints</h2>
+		<a href="min_max_container.html">min-max-container</a>
+
+		<h2>Changing the box model completely</h2>
+		<p>The total width of a box is the sum of its width, padding-right, padding-left, border-right, and border-left properties.</p>
+		<p>It's possible to tweak the box model with the property box-sizing.With the value border-box, it changes the box model to the new one.</p>
+
+		<a href="box_sizing.html">Change the box model</a>
+
+		<h2>Box display types</h2>
+		<p>CSS has other types of boxes that behave differently with block level element box. The type of box applied to an element is specified by the display property. </p>
+
+		<h3>Common display types</h3>
+		<p>The most common values available for display are block, inline, and inline-block.</p>
+		<ul>
+			<li>block</li>
+			<p>Defined as a box that's stacked upon other boxes, and can have width and height set on it.The whole box model applies to block boxes.</p>
+			<li>inline</li>
+			<p>It is the opposite of a block box.Width and height settings have no effect on inline boxes, any padding,margin and border set on inline boxes will update the position of surrounding text, but will not effect the position of surrounding block boxes.</p>
+			<li>inline-block</li>
+			<p>It is something in between the first two</p>
+		</ul>
+
+		<h3>Uncommon display types</h3>
+		<ul>
+			<li>display: table</li>
+			<li>display: flex</li>
+			<li>display: grid</li>
+		</ul>
+
+	</body>
+</html>

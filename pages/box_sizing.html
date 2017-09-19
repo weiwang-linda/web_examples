@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Change box model example</title>
+		<link rel="shortcut icon" href="../ffx.ico" type="image/icon">
+		<link rel="stylesheet" href="../styles/box_sizing.css" type="text/css">
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+
+	<script>
+		var one = document.querySelector('.one');
+		var two = document.querySelector('.two');
+		
+		function outputWH(box) {
+			var width = box.offsetWidth;
+			var height = box.offsetHeight;
+			box.textContent = 'Width: ' + width + 'px, Height: ' + height + 'px.'
+		}
+
+		outputWH(one)
+		outputWH(two)
+	</script>
+	</body>
+</html>
