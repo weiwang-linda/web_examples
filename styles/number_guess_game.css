@@ -1,0 +1,11 @@
+html {
+	font-family: sans-serif;
+	width: 500px;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+.lastResult {
+	color: white;
+	padding: 3px;
+}
